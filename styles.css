@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background-color: #070F2B;
+}
+
+header {
+    background-color: #9290C3;
+    
+}
+
+#central {
+    width: 75%;
+    height: 25%;
+    margin: auto 12.5%;
+}
+
+#name {
+    font-weight: 600;
+    font-size: 75px;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+#texte {
+    margin-top: 4%;
+    margin-left: 45%;
+}
+
+#image {
+    margin-left: 60px;
+    height: 100%;
+    float: left;
+}
+
+#image img {
+    margin-top: 35px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1B1A55;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #535C91;
+}
+
+
+@keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.popup {
+    text-align: center;
+    height: 50%;
+    width: 75%;
+    margin: 8% 12.5% 10% 12.5%;
+    color: white;
+    animation: fadeInSlideUp 2s ease-out forwards;
+}
+
+.titlep {
+    font-size: 50px;
+}
+
+.par {
+    padding-left: 15px;
+    font-size: 15px;
+    margin-top: 5%;
+    border-left: 2px solid #9290C3;
+}
+
+.maptext {
+    text-align: center;
+    height: 50%;
+    width: 75%;
+    margin: 0 12.5%;
+    color: white;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+.contain {
+    width: 50%;
+    height: 20%;
+    margin: 0 25% 20% 25%;
+}
+  

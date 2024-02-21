@@ -1,0 +1,2 @@
+<button onclick="openNewWindow()">Open New Window</button>
+<script src="renderer.js"></script>
