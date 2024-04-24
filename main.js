@@ -51,3 +51,4 @@ ipcMain.on('open-new-window', (event, arg) => {
     //newWindow.webContents.openDevTools()
   
 });
+
