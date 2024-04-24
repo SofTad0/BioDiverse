@@ -48,5 +48,6 @@ ipcMain.on('open-new-window', (event, arg) => {
       title: 'New Window',
     });
     newWindow.loadFile("regions/"+arg+".html");
+    //newWindow.webContents.openDevTools()
   
 });
