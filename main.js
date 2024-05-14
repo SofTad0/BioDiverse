@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain} = require('electron')
+const { app, BrowserWindow, ipcMain, shell} = require('electron')
 
 let win;
 
@@ -52,3 +52,16 @@ ipcMain.on('open-new-window', (event, arg) => {
   
 });
 
+
+// Open links externally in the user's default browser
+app.on('web-contents-created', (event, contents) => {
+  contents.on('will-navigate', (event, navigationUrl) => {
+    event.preventDefault();
+    shell.openExternal(navigationUrl);
+  });
+
+  contents.on('new-window', async (event, navigationUrl) => {
+    event.preventDefault();
+    await shell.openExternal(navigationUrl);
+  });
+});

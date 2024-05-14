@@ -33,6 +33,21 @@ body {
     float: left;
 }
 
+a:link, a:visited {
+    font-family: "Playfair Display", serif;
+    color: white;
+    border: 2px solid #9290C3;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #9290C3;
+    color: white;
+}
+
 .borderim {
     width: 40%;
     height: 100%;
